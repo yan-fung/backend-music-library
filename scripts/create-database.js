@@ -6,7 +6,7 @@ const path = require('path')
 const errorCode = "42P04";
 
 // capture first command line argument passed to this script
-const envName = process.argv.slice(2)[0]
+const envName = process.argv.slice(2)[0] 
 
 // this function decides whether to load .env or .env.test.
 
@@ -56,5 +56,7 @@ const createDatabase = async (databaseName) => {
   }
 }
 
+console.log(process.argv)
 const databaseName = loadEnv(envName)
+console.log(databaseName)
 createDatabase(databaseName)
