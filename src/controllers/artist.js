@@ -66,7 +66,7 @@ exports.patchArtistById = async (req, res) => {
       let query;
       let params;
 
-      if (name & genre) {
+      if (name && genre) {
         query = `UPDATE Artists SET name = $1, genre = $2 WHERE id = $3 RETURNING *`
         params = [name, genre, id]
       } else if (name) {
