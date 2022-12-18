@@ -16,6 +16,8 @@ const loadEnv = (envName) => {
   
     const envFile = envName === 'test' ? '../.env.test' : '../.env'
     
+    console.log(__dirname)
+    console.log(envFile)
     require('dotenv').config({
       path: path.join(__dirname, envFile),
     })
