@@ -93,11 +93,6 @@ exports.patchArtistById = async (req, res) => {
 exports.deleteArtistById = async (req, res) => {
   try {
       const id = req.params.artistId;
-      // const name = req.body.name;
-      // const genre = req.body.genre;
-      // console.log(id)
-      // console.log(name)
-      // console.log(genre)
 
       const { rows: [ artist ] } = await db.query(`DELETE FROM Artists WHERE id = $1 RETURNING *`, [ id ]);
 
