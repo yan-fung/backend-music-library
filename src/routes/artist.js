@@ -4,6 +4,7 @@ const artistRouter = express.Router();
 
 const artistController = require('../controllers/artist');
 
+
 artistRouter.post('/', artistController.createArtist)
 artistRouter.get('/', artistController.readArtist)
 artistRouter.get('/:artistId', artistController.getArtistById)
