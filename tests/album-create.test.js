@@ -26,8 +26,10 @@ describe('create album', () => {
           artistId: `${artist.id}`
         })
 
-        expect(status).to.equal(201)
-        expect(body.album_name).to.equal('A Night at the Opera')
+        expect(status).to.equal(201);
+        expect(body.album_name).to.equal('A Night at the Opera');
+        expect(body.year).to.equal(1974);
+        expect(body.artistid).to.equal(artist.id);
 
         const { rows: [ albumData ] } = await db.query(
           `SELECT * FROM Albums WHERE id = ${body.id}`
