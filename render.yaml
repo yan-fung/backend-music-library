@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: music-library-
+    name: music-library-api
     env: node
     region: frankfurt
     plan: free
@@ -13,7 +13,7 @@ services:
           property: database
       - key: PGUSER
         fromDatabase:
-          name: music-library-database
+          name: music-library-database 
           property: user
       - key: PGPASSWORD
         fromDatabase:
