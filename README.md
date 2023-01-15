@@ -27,7 +27,7 @@ Albums endpoints and methods
 |:--------------|:-------------------------------------------------------:|:-------------------------------------------------------:|
 | GET           |                      /albums                            |                    get all albums                       | 
 | GET           |                     /albums/:id                         |                   get album by id                       |
-| POST          |                     /albums                             |                    add new albums                       |
+| POST          |                    /albums/:artistId/album              |            add new albums to the specific artist        |
 | PUT           |                    /albums/:id                          |                  update album by id                     |
 | PATCH         |                    /albums/:id                          |                  update album by id                     |
 | DELETE        |                    /albums/:id                          |                  remove album by id                     |
