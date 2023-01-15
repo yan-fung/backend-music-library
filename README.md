@@ -3,7 +3,7 @@
 ## Introduction
 The book libary API built with NODE JS, Express, for PostgreSQL using Sequelize ORM. The user can create, retrieve, update and delete (CRUD operations) for both artist and album in database.
 
-## Commands
+## Quick Start and Commands
 1. Clone the repo:
 ```bash
 git clone https://github.com/yan-fung/music-library-.git
@@ -16,11 +16,14 @@ npm start
 ```bash
 npm test
 ```
+4. Download Postman and pgAdmin and use them to check if the CRUD operations is working.
+- [Postman](https://www.postman.com/downloads/)
+- [pgAdmin](https://www.pgadmin.org/download/)
 
-### Development mode
+### Development Mode
 The server side Express code will be served by a node server using [Nodemon](https://nodemon.io/) which helps in automatically restarting the server whenever server side code updates.
 
-## API endpoints and methods
+## API Endpoints and Methods
 Artists endpoints and methods
 
 | **Methods**   |                        **Urls**                         |                       **Actions**                       |
