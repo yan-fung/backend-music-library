@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The book libary API built with NODE JS, Express, for PostgreSQL using Sequelize ORM. The user can create, retrieve, update and delete (CRUD operations) for both artist and album in database.
+The music libary API built with NODE JS, Express, for PostgreSQL using Sequelize ORM. The user can create, retrieve, update and delete (CRUD operations) for both artist and album in database.
 
 ## Quick Start and Commands
 
